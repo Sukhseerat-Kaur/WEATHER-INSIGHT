@@ -1,0 +1,133 @@
+.card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  z-index: 2;
+}
+
+.card .current {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.x-large-font {
+  font-size: x-large;
+}
+.xx-large-font {
+  font-size: xx-large;
+}
+
+.card .current .temp {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  font-size: 80px;
+}
+
+.card .current .temp img {
+  width: 120px;
+}
+
+.card .current .condition-text {
+  text-transform: capitalize;
+}
+
+.card .current .updated-on {
+  font-size: smaller;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.card .current .faltu-cheeza {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 15px;
+  font-size: small;
+  row-gap: 8px;
+  column-gap: 20px;
+}
+h2 {
+  margin-top: 10px;
+  font-size: xx-large;
+  font-weight: normal;
+  width: 90%;
+  padding: 0 25px;
+}
+.hourly-update {
+  margin-top: -20px;
+  width: 90%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.hourly-cards {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  /* border-top: 2px solid black;
+  border-bottom: 2px solid black; */
+  padding: 25px 0;
+  scroll-behavior: smooth;
+}
+
+.hourly-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.hourly-card {
+  flex: 1 0 11%;
+  margin: 0 10px;
+}
+.details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  background-color: rgba(224, 220, 220, 0.212);
+  border-radius: 8px;
+}
+.hourly-card img {
+  width: 80px;
+  /* border: 1px solid black; */
+}
+
+.hourly-card .temp {
+  align-self: center;
+}
+.hourly-card .condition-text {
+  margin-bottom: 12px;
+  align-self: center;
+}
+
+.small-font {
+  font-size: x-small;
+}
+
+.time {
+  margin-top: 6px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hourly-update button {
+  background-color: rgba(197, 195, 195, 0.274);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(212, 209, 209, 0.644);
+  cursor: pointer;
+}

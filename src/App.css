@@ -1,38 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  color: white;
+  padding-top: 50px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  font-family: "Roboto", sans-serif;
+}
+.App:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  opacity: 0.8;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  z-index: 2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App.day.sunny {
+  background-color: #3c7ab5;
+}
+
+.App.day.sunny:before {
+  background: url("./images/—Pngtree—sun\ rays_72745.png") no-repeat center
+    bottom/cover;
+  height: 122%;
+}
+.App.day.partially-cloudy {
+  background-color: #3c7ab5;
+}
+
+.App.day.partially-cloudy:before {
+  background: url("https://www.transparentpng.com/thumb/sky/29B121-new-the-cooling-shelf-products-exquisa.png")
+    no-repeat center center/cover;
+}
+.App.day.cloudy {
+  background-color: #4c5d77;
+}
+
+.App.day.cloudy:before {
+  background: url("./images/—Pngtree—blue\ sky\ blue\ white\ clouds_5438056.png")
+    no-repeat center center/cover;
+}
+
+.App.day.rainy {
+  background-color: #3c6891;
+}
+
+.App.day.rainy:before {
+  background: url("./images/—Pngtree—rain\ rain\ effect_5990884.png") no-repeat
+    center center/cover;
+}
+
+.App.night {
+  background-color: #212a44;
+}
+
+.App.night:before {
+  opacity: 0.3;
+  background: url("./images/—Pngtree—blue\ creative\ texture\ starry\ sky_5370563.png")
+    no-repeat center center/cover;
+}
+
+.App.night.cloudy {
+  background-color: #212a44;
+}
+
+.App.night.cloudy:before {
+  background: url("./images/—Pngtree—realist\ cloud\ vector_8582.png") no-repeat
+    center center/cover;
+}
+
+.App.night.rainy {
+  background-color: #212a44;
+}
+
+.App.night.rainy:before {
+  background: url("./images/—Pngtree—rain\ rain\ effect_5990884.png") no-repeat
+    center center/cover;
+}
+
+input {
+  height: 45px;
+  width: 350px;
+  background-color: rgba(221, 219, 219, 0.315);
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: large;
+}
+
+input::placeholder {
+  color: rgb(202, 199, 199);
+}
+
+input:focus {
+  outline: none;
 }
