@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/WEATHER-INSIGHT/static/css/main.0aab90ad.chunk.css",
+    "main.js": "/WEATHER-INSIGHT/static/js/main.a91ed4dd.chunk.js",
+    "main.js.map": "/WEATHER-INSIGHT/static/js/main.a91ed4dd.chunk.js.map",
+    "runtime-main.js": "/WEATHER-INSIGHT/static/js/runtime-main.3ad8c0d5.js",
+    "runtime-main.js.map": "/WEATHER-INSIGHT/static/js/runtime-main.3ad8c0d5.js.map",
+    "static/js/2.3b8b2416.chunk.js": "/WEATHER-INSIGHT/static/js/2.3b8b2416.chunk.js",
+    "static/js/2.3b8b2416.chunk.js.map": "/WEATHER-INSIGHT/static/js/2.3b8b2416.chunk.js.map",
+    "index.html": "/WEATHER-INSIGHT/index.html",
+    "static/css/main.0aab90ad.chunk.css.map": "/WEATHER-INSIGHT/static/css/main.0aab90ad.chunk.css.map",
+    "static/js/2.3b8b2416.chunk.js.LICENSE.txt": "/WEATHER-INSIGHT/static/js/2.3b8b2416.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/WEATHER-INSIGHT/static/media/—Pngtree—sun rays_72745.9df89ae3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3ad8c0d5.js",
+    "static/js/2.3b8b2416.chunk.js",
+    "static/css/main.0aab90ad.chunk.css",
+    "static/js/main.a91ed4dd.chunk.js"
+  ]
+}
