@@ -39,8 +39,15 @@ function App() {
               cityData.current.condition.text ===
                 "Moderate or heavy rain shower" ||
               cityData.current.condition.text === "Moderate rain" ||
-              cityData.current.condition.text === "Patchy rain possible"
+              cityData.current.condition.text === "Patchy rain possible" ||
+              cityData.current.condition.text === "Light rain" ||
+              cityData.current.condition.text === "Moderate rain at times" ||
+              cityData.current.condition.text ===
+                "Moderate or heavy rain with thunder"
             ? "App day rainy"
+            : cityData.current.condition.text ===
+              "Patchy light rain with thunder"
+            ? "App day thunder"
             : "App day partially-cloudy"
           : cityData.current.condition.text === "Partly cloudy" ||
             cityData.current.condition.text === "Cloudy"

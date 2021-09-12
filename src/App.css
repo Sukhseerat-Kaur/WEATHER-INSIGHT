@@ -21,7 +21,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 110%;
+  height: 113%;
   z-index: 1;
   opacity: 0.8;
 }
@@ -63,6 +63,15 @@
 .App.day.rainy:before {
   background: url("./images/—Pngtree—rain\ rain\ effect_5990884.png") no-repeat
     center center/cover;
+}
+
+.App.day.thunder {
+  background-color: #3c6891;
+}
+
+.App.day.thunder:before {
+  background: url("./images/—Pngtree—lightning\ thunder\ dark\ clouds_3802400.png")
+    no-repeat center center/cover;
 }
 
 .App.night {
